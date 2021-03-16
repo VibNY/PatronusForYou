@@ -30,7 +30,7 @@ def say_hello():
     user_email = request.headers.get('X-Goog-Authenticated-User-Email')
     user_id = request.headers.get('X-Goog-Authenticated-User-ID')
 
-    page = render_template('index.html',
+    page = render_template('GCP.html',
         email=user_email,
         id=user_id)
     return page
